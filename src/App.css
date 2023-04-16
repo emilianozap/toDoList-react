@@ -1,0 +1,117 @@
+.container{
+  width: 100%;
+  height: calc(100vh - 100px);
+  color: black;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: 800;
+  background-color: rgba(128, 128, 128, 0.9);
+  border-radius: 20px;
+  width: 300px;
+  text-align: center;
+}
+
+.containerForm{
+  width: 300px ;
+  background-color: rgba(128, 128, 128, 0.9);
+  display: flex;
+  justify-content: center;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.containerTasks{
+  width: 50%;
+  background-color: rgba(128, 128, 128, 0.9);
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputText{
+  width: auto;
+  text-align: center;
+}
+input{
+  line-height: 33px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  
+
+}
+
+.btn{
+  background-color: rgb(64, 0, 128);
+  color: aliceblue;
+  cursor: pointer;
+  padding: 0 20px;
+  border: 1px solid white;
+  border-radius: 10px;
+  transition: all 0.5;
+  margin-right: 10px;
+}
+
+.btn:hover{
+  background-color: rgb(64, 0, 90);
+  transform: scale(1.1);
+}
+
+.btnEdit{
+  background-color: rgb(64, 0, 128);
+  color: white;
+  margin-right: 10px;
+}
+
+.btnEdit:hover{
+  background-color: rgb(64, 0, 90);
+  transform: scale(1.1);
+}
+
+.btnDelete{
+  background-color: rgb(64, 0, 128);
+  color: aliceblue;
+}
+
+.btnDelete:hover{
+  background-color: rgb(64, 0, 90);
+  transform: scale(1.1);
+}
+
+.containerInfoTask{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.containerTask{
+  width: 95%;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 1.3em;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(150, 150, 150, 0.9);
+  border-radius: 15px;
+  box-shadow: 5px 5px rgba(27, 10, 4, 0.995);
+}
+
+.allTask{
+  margin-right: 50px;
+}
+
+.spamSubrayado{
+  text-decoration: line-through;
+}
