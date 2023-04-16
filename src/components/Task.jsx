@@ -37,9 +37,11 @@ export function Task(props) {
       <>
         <input type="text" onChange={handleChange} value={valor} />
 
-        <button className="btn" onClick={handleClick}  >guardar</button>
+        <div>
+        <button className="btn btnDelete" onClick={handleClick}  >💾</button>
 
-        <button className="btn btnDelete" onClick={()=>onDelete(task.id)}>borrar</button> 
+        <button className="btn btnDelete" onClick={()=>onDelete(task.id)}>🗑️</button> 
+        </div>
       </>
     );
   }
@@ -48,10 +50,11 @@ export function Task(props) {
     return (
       <>
         <span className={taskComplete ? "allTask spamSubrayado" : "allTask"} onClick={()=> setTaskComplete(!taskComplete)}>{task.task}</span>
+        <div>
+        <button className="btn btnEdit" onClick={() => setEdit(true)}>✏️</button>
 
-        <button className="btn btnEdit" onClick={() => setEdit(true)}>actualizar</button>
-
-        <button className="btn btnDelete" onClick={()=>onDelete(task.id)}>borrar</button> 
+        <button className="btn btnDelete" onClick={()=>onDelete(task.id)}>🗑️</button> 
+        </div>
       </>
     );
   }
